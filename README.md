@@ -56,3 +56,11 @@ makeCacheMatrix<- function(x = matrix()) {
  x <- cacheSolve(v)
  x
  
+ makeVector <- function(x = numeric()) {
+            m <- NULL
+            set <- function(y) {
+                    x <<- y
+                    m <<- NULL
+            }
+            get <- function() x
+            setmean <- function(mean) m <<- mean
