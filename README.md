@@ -48,11 +48,11 @@ makeCacheMatrix<- function(x = matrix()) {
  }
  
  v$get()`<addr>`
- v$getreverse()`<addr>`
- cacheSolve(v)`<addr>`
- v$getreverse`<addr>`
- cacheSolve(v)`<addr>`
- v$getreverse()`<addr>`
- x <- cacheSolve(v)`<addr>`
+ v$getreverse()
+ cacheSolve(v)
+ v$getreverse
+ cacheSolve(v)
+ v$getreverse()
+ x <- cacheSolve(v)
  x
  
