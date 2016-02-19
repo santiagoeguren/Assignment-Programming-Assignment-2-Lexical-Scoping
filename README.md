@@ -25,34 +25,35 @@
 
 
 
-  cacheSolve<- function(x, ...) {
-    m <- x$getreverse()
-    if(!is.null(m)) {
-        message("getting cached data")
-        return(m)
-   }
-   data <- x$get()
-   m <- solve(data, ...)
-   x$setreverse(m)
-   m
- }
+        cacheSolve<- function(x, ...) {
+            m <- x$getreverse()
+            if(!is.null(m)) {
+            message("getting cached data")
+            return(m)
+            }
+           data <- x$get()
+           m <- solve(data, ...)
+           x$setreverse(m)
+           m
+           }
  
- 
-v$get()
+### Some operations
 
-v$getreverse()
+         v$get()
 
-cacheSolve(v)
+         v$getreverse()
 
-v$getreverse
+         cacheSolve(v)
 
-cacheSolve(v)
+         v$getreverse
 
-v$getreverse()
+         cacheSolve(v)
 
-x <- cacheSolve(v)
+         v$getreverse()
 
-x
+         x <- cacheSolve(v)
+
+         x
  
 
  
