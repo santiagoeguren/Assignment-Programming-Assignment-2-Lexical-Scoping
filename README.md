@@ -2,25 +2,19 @@
 
 ### makeCacheMatrix
 
-makeCacheMatrix<- function(x = matrix()) {
-  
-  m <- NULL
-  
-  set <- function(y) {
-    x <<- y
-    m <<- NULL
-  }
-  
-  get <- function() x
-  
-  setreverse <- function(reverse) m <<- reverse ##  solver not Solve
-  
-  getreverse <- function() m   
-  
-  list(set = set, get = get,
-       setreverse = setreverse,
-       getreverse = getreverse)
-}
+             makeCacheMatrix<- function(x = matrix()) {
+                m <- NULL
+                set <- function(y) {
+                x <<- y
+                m <<- NULL
+                }
+                get <- function() x
+                setreverse <- function(reverse) m <<- reverse ##  solver not Solve
+                getreverse <- function() m   
+                list(set = set, get = get,
+                setreverse = setreverse,
+                getreverse = getreverse)
+                }
 
 
 
