@@ -75,7 +75,7 @@ makeVector <- function(x = numeric()) {
 
 
 
-
+ggggggggggggggggggggggggggggg
     cachemean <- function(x, ...) {
             m <- x$getmean()
             if(!is.null(m)) {
