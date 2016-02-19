@@ -38,13 +38,21 @@ cacheSolve<- function(x, ...) {
    m
  }
  
+ 
 v$get()
+
 v$getreverse()
+
 cacheSolve(v)
+
 v$getreverse
+
 cacheSolve(v)
+
 v$getreverse()
+
 x <- cacheSolve(v)
+
 x
  
 
