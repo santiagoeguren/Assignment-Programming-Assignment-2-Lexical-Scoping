@@ -1,7 +1,7 @@
 ####  Assignment-Programming-Assignment-2-Lexical-Scoping
 
 
-##  makeCacheMatrix
+
 
 
 makeCacheMatrix<- function(x = matrix()) {
@@ -33,8 +33,7 @@ makeCacheMatrix<- function(x = matrix()) {
 
  v<- makeCacheMatrix( matrix( c(2, 4, 3, 1),nrow=2, ncol=2,byrow = TRUE) )
  
- 
- ## cacheSolve 
+
 
  
  cacheSolve<- function(x, ...) {
