@@ -14,34 +14,27 @@
                 list(set = set, get = get,
                 setreverse = setreverse,
                 getreverse = getreverse)
-                }
+          }
 
-
-
- v<- makeCacheMatrix( matrix( c(2, 4, 3, 1),nrow=2, ncol=2,byrow = TRUE) )
+### make matrix v
  
+          v<- makeCacheMatrix( matrix( c(2, 4, 3, 1),nrow=2, ncol=2,byrow = TRUE) )
+          
+          
+### make cachesolve
 
 
 
-cacheSolve<- function(x, ...) {
-
+  cacheSolve<- function(x, ...) {
     m <- x$getreverse()
-   
     if(!is.null(m)) {
-   
         message("getting cached data")
-     
         return(m)
-     
    }
    data <- x$get()
-   
    m <- solve(data, ...)
-   
    x$setreverse(m)
-   
    m
-   
  }
  
  
